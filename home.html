@@ -1,0 +1,219 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<!-- <ul >
+		<li >
+			<ion-card class="top" (click) ="topcard()" [ngClass] = "{ 'Act' : true }">
+				<img style="height: 182px" src="assets/imgs/logo.png">
+				<h1>Card Title1</h1>
+				<p>card description</p>
+			</ion-card>
+			<ion-card  [ngClass] = "{'Active' : (middlecard == true), 'Inactive' : (middlecard == false)}"  >
+				<img  style="height: 182px"  src="assets/imgs/logo.png">
+				<h1>Card Title2</h1>
+				<p>card description</p>
+			</ion-card>
+			<ion-card  [ngClass] =" {'Active1' : (thirdcard == true),'Inactive1' : (thirdcard == false)} " >
+				<img style="height: 182px"  src="assets/imgs/logo.png">
+				<h1>Card Title3</h1>
+				<p>card description</p>
+			</ion-card>
+			
+		</li>
+	</ul>  -->
+<!--(click) ="topcard()"  [ngClass] = "{'active2' : (firstcard == true), 'card4' : (firstcard == false)}"
+ [ngClass] = "{'active' : (middlecard == true), 'card5' : (middlecard == false)}"-->
+
+
+ <!--  <ul>
+    <li>
+      <ion-card class="card4">
+        <img style="height: 182px"  src="assets/imgs/logo.png">
+        <h1>Card Title4</h1>
+        <p>card description</p>
+      </ion-card>
+       <ion-card >
+        <img  style=" height: 182px"  src="assets/imgs/logo.png">
+        <h1>Card Title5</h1>
+        <p>card description</p>
+      </ion-card>
+       <ion-card   [ngClass] =" {'active1' : (thirdcard == true),'card6' : (thirdcard == false)} ">
+        <img style="height: 182px"  src="assets/imgs/logo.png">
+        <h1>Card Title6</h1>
+        <p>card description</p>
+      </ion-card>
+    </li>
+  </ul> -->
+
+
+  <!-- <div id="card1" class="card"> </div>
+<div id="card2" class="card"></div>
+<div id="card3" class="card"></div>
+ --><!-- 
+ <div class="card4" >
+  <div class="stacked-inner">
+  Card 4 (requires 1 extra div)
+  </div>
+</div>
+ -->
+
+<!-- <div class="card-stacked" (click) ="topcard()" >
+  <div class="lower-card"  [ngClass] = "{'active' : (middlecard == true), 'inactive' : (middlecard == false)}" ></div>
+  <div class="lower-card" [ngClass] =" {'active1' : (thirdcard == true),'inactive1' : (thirdcard == false)} " ></div>
+  <div class="card5">
+    Card 5 (requires 2 extra divs + wrapper)    
+  </div>
+  </div>
+ -->
+<div class="card-stacked" (click) ="topcard()" >
+<!--  <ion-row style="width:100%;margin:0px;" > -->
+  <ion-card style="border-radius: 18px;margin: 0px 0px 0px 0px;
+    background-color: #e9e7e7;width:300px;
+    z-index: 0;">
+    <ion-card style="border-radius:10px;margin:0px;background-color:#f3f3f3;width:100%;box-shadow:none;">
+       <ion-item style="background-color:transparent;padding: 10px 0px 8px 10px;">
+          <ion-thumbnail item-left >
+              <img src="assets/imgs/profile_shot2.jpg">
+         
+          </ion-thumbnail>
+
+          <ion-label style="white-space:normal;margin-right:0px;">
+          <p item-right style="font-size: 1.3rem;font-weight: 500;color: #444444; margin-left:83px;
+    text-align: left;margin-bottom: 5px;">Top 10 places to visit in New York and there is more to see </p>
+           <p item-right style="font-size:1.1rem;font-weight:normal;color:#444444;text-align: left;margin-left:83px;margin-top:0px;">The first few lines of the article can come here and allow for the user to get a quick glance of the article....</p>
+       </ion-label>
+        </ion-item>
+    </ion-card>
+ 
+    <ion-row style="margin:0px 0px 0px 5px;">
+                <ion-col col-7 style="color:#444444;">
+                      <P style="font-size:1.2rem;margin-bottom:0px;">www.source.com </P>
+
+                     <!--  <p style="font-size:1.0rem;">21st March 2017</p> -->
+                </ion-col>
+
+                <ion-col>
+                    <img src="assets/imgs/unlike.svg" style="width:20px;height:20px;">
+                    <div style="font-size: 10px;margin-top:0px;padding-left:7px;color:#000; " >9</div>
+                </ion-col>
+
+                <ion-col>
+                   <img src="assets/imgs/comment.svg" style="width:20px;height:20px">
+                    <div style="font-size: 10px;padding-left:7px;margin-top:0px ">13</div>
+                </ion-col>
+
+                <ion-col>
+                    <img src="assets/imgs/share.svg" style="width:20px;height:20px">
+                    <div style="font-size: 10px;margin-top:0px;padding-left:7px;">34</div>
+                </ion-col>
+
+                
+            </ion-row>  
+  </ion-card>
+<!-- </ion-row>
+ -->
+ <div class="lower-card"  [ngClass] = "{'active' : (middlecard == true), 'inactive' : (middlecard == false)}" >
+<!-- <ion-row style="width:100%;margin: 0px;"  >
+ -->  <ion-card  style="border-radius: 18px;margin: 0px 0px 0px 0px;
+    background-color: #e9e7e7;width:300px;
+    z-index: 0;margin-top:0px;">
+    <ion-card style="border-radius:10px;margin:0px;background-color:#f3f3f3;width:100%;box-shadow:none;">
+       <ion-item style="background-color:transparent; padding: 10px 0px 8px 10px;">
+          <ion-thumbnail item-left >
+              <img src="assets/imgs/profile_shot2.jpg">
+         
+          </ion-thumbnail>
+
+          <ion-label style="white-space:normal;margin-right:0px;">
+          <p item-right style="font-size: 1.3rem;font-weight: 500;color: #444444; margin-left:83px;
+    text-align: left;margin-bottom: 5px;">Top 10 places to visit in New York and there is more to see </p>
+           <p item-right style="font-size:1.1rem;font-weight:normal;color:#444444;text-align: left;margin-left:83px;margin-top:0px;">The first few lines of the article can come here and allow for the user to get a quick glance of the article ....</p>
+       </ion-label>
+        </ion-item>
+    </ion-card>
+ 
+    <ion-row style="margin:0px 0px 0px 5px;">
+                <ion-col col-7 style="color:#444444;">
+                      <P style="font-size:1.2rem;margin-bottom:0px;">www.source.com </P>
+                    <img style="width: 20px;" src="assets/imgs/link.png">
+                      <!-- <p style="font-size:1.0rem;">21st March 2017</p> -->
+                </ion-col>
+
+                <ion-col>
+                    <img src="assets/imgs/unlike.svg" style="width:20px;height:20px;">
+                    <div style="font-size: 10px;margin-top:0px;padding-left:7px;color:#000; " >23</div>
+                </ion-col>
+
+                <ion-col>
+                   <img src="assets/imgs/comment.svg" style="width:20px;height:20px">
+                    <div style="font-size:10px;padding-left:7px;margin-top:0px ">11</div>
+                </ion-col>
+
+                <ion-col>
+                    <img src="assets/imgs/share.svg" style="width:20px;height:20px">
+                    <div style="font-size: 10px;margin-top:0px;padding-left:7px;">11</div>
+                </ion-col>
+
+                
+            </ion-row>  
+  </ion-card>
+<!-- </ion-row> -->
+</div>
+
+<div class="lower-card" [ngClass] =" {'active1' : (thirdcard == true),'inactive1' : (thirdcard == false)} " >
+<!-- <ion-row style="width:100%;margin: 0px;"  >
+ -->  <ion-card  style="border-radius: 18px;margin: 0px 0px 0px 0px;
+    background-color: #e9e7e7;width:300px;
+    z-index: 0;margin-top:0px;
+    ">
+    <ion-card style="border-radius:10px;margin:0px;background-color:#f3f3f3;width:100%;box-shadow:none;">
+       <ion-item style="background-color:transparent;padding: 10px 0px 8px 10px;">
+          <ion-thumbnail item-left >
+              <img src="assets/imgs/profile_shot2.jpg">
+         
+          </ion-thumbnail>
+
+          <ion-label style="white-space:normal;margin-right:0px;">
+           <p item-right style="font-size: 1.3rem;font-weight: 500;color: #444444; margin-left:83px;
+    text-align: left;margin-bottom: 5px;">Top 10 places to visit in New York and there is more to see </p>
+           <p item-right style="font-size:1.1rem;font-weight:normal;color:#444444;text-align: left;margin-left:83px;margin-top:0px;">The first few lines of the article can come here and allow for the user to get a quick glance of the article …</p>
+       </ion-label>
+        </ion-item>
+    </ion-card>
+ 
+    <ion-row style="margin:0px 0px 0px 5px;">
+                <ion-col col-7 style="color:#444444;">
+                      <P style="font-size:1.2rem;margin-bottom:0px;">www.source.com </P>
+                    <img  style="width: 20px;" src="assets/imgs/link.png">
+                    <!--   <p style="font-size:1.0rem;">21st March 2017</p> -->
+                </ion-col>
+
+                <ion-col>
+                    <img src="assets/imgs/unlike.svg" style="width:20px;height:20px;">
+                    <div style="font-size: 10px;margin-top:0px;padding-left:7px;color:#000; " >1</div>
+                </ion-col>
+
+                <ion-col>
+                   <img src="assets/imgs/comment.svg" style="width:20px;height:20px">
+                    <div style="font-size: 10px;padding-left:7px;margin-top:0px ">4</div>
+                </ion-col>
+
+                <ion-col>
+                    <img src="assets/imgs/share.svg" style="width:20px;height:20px">
+                    <div style="font-size: 10px;margin-top:0px;padding-left:7px;">3</div>
+                </ion-col>
+
+                
+            </ion-row>  
+  </ion-card>
+<!-- </ion-row>
+ --></div>
+</div>
+
+</ion-content>
